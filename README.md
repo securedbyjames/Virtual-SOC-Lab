@@ -1,7 +1,5 @@
 <h1>Virtual Security Operations Center Lab</h1>
 
-<h2>Description</h2>
-
 <h2>My Hardware</h2>
 
 - Apple MacBook Pro (M4)
@@ -30,4 +28,9 @@
   - Threat Detection
   - Incident Investigation
   - Cloud Security Monitoring
+
+<h2>Projects</h2>
+<a href="https://github.com/securedbyjames/Virtual-SOC-Lab/blob/main/Projects/Azure-Sentinel-SOC-Setup.md">Azure Sentinel SOC Lab Setup</a><br><br>
+<b>Overview: </b>This setup demonstrates a SOC monitoring pipeline using Microsoft Sentinel to collect and analyze Windows security logs from a Windows 11 virtual machine in my lab environment.
+
 
