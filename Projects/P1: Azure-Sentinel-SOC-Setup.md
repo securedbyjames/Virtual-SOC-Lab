@@ -1,4 +1,4 @@
-<h1>Azure Sentinel SOC Lab Setup</h1>
+<h1>Project 1: Azure Sentinel SOC Lab Setup</h1>
 
 <h2>Overview</h2>
 
