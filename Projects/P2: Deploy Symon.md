@@ -15,7 +15,7 @@ These events are collected from a Windows virtual machine, forwarded to Azure Lo
 
 The objective of this deployment is to simulate a real-world SOC logging pipeline, where endpoint telemetry is ingested into a SIEM platform for detection, investigation, and threat hunting.
 
-<h3>Step 1: Installing and Running Sysmon</h3>
+<h2>Step 1: Installing and Running Sysmon</h2>
 
 Sysmon was installed on the Windows VM and configured to run as a system service.
 
