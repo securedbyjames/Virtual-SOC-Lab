@@ -31,6 +31,9 @@
 
 <h2>Projects</h2>
 <a href="https://github.com/securedbyjames/Virtual-SOC-Lab/blob/main/Projects/Azure-Sentinel-SOC-Setup.md">Azure Sentinel SOC Lab Setup</a><br><br>
-<b>Overview: </b>This setup demonstrates a SOC monitoring pipeline using Microsoft Sentinel to collect and analyze Windows security logs from a Windows 11 virtual machine in my lab environment.
+<b>Overview: </b>This setup demonstrates a SOC monitoring pipeline using Microsoft Sentinel to collect and analyze Windows security logs from a Windows 11 virtual machine in my lab environment.<br><br>
+
+<a href="Projects/P2: Deploy Symon.md">Deploying Sysmon</a><br><br>
+<b>Overview: </b>Setting up Sysmon and connecting the appropriate data source in Azure to send operational sysmon logs to Microsoft Sentinel
 
 
