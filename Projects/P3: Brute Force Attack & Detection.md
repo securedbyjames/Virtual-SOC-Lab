@@ -89,10 +89,10 @@ I created a Scheduled Query Rule in Sentinel to detect brute force behavior.
 
 <h2>Step 6: Microsoft Defender Incidents & Alerts</h2>
 
-Multiple alerts were generated for failed logon attempts (brute force)
+Multiple alerts/incidents were generated for failed logon attempts (brute force)
 
 <p align="left">
-<img src="https://i.imgur.com/Fz6avl4.png" width="75%" height="75%">
+<img src="https://i.imgur.com/906tK3F.png" width="75%" height="75%">
 
 **Findings:**
 - Repeated failed login attempts from a single IP
