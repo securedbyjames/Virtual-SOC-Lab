@@ -37,7 +37,7 @@ I used Nmap to identify open ports on the Windows 11 target.
 <p align="left">
 <img src="https://i.imgur.com/C12YcqB.png" width="75%" height="75%">
 
-Key Findings:
+**Key Findings:**
 - Port 3389 (RDP) open
 - Port 445 (SMB) open
 - Port 5357 (WS-Discovery) open
@@ -68,7 +68,7 @@ The attack logs were ingested into Microsoft Sentinel.
 <p align="left">
 <img src="https://i.imgur.com/6BLwRlm.png" width="75%" height="75%">
 
-Key Insights:
+**Key Insights:**
 - Source IP: 192.168.180.128 (Kali attacker)
 - Target Account: james
 - Failed attempts detected in 5-minute intervals (from scheduled KQL alert rule)
@@ -82,7 +82,7 @@ I created a Scheduled Query Rule in Sentinel to detect brute force behavior.
 - Based on Event ID 4625
 - Grouped by IP address and account
 
-Alert Details:
+**Alert Details:**
 - Severity: Medium
 - Category: Credential Access
 - Detection Source: Scheduled Query
@@ -94,12 +94,12 @@ Multiple alerts were generated for failed logon attempts (brute force)
 <p align="left">
 <img src="https://i.imgur.com/Fz6avl4.png" width="75%" height="75%">
 
-Findings:
+**Findings:**
 - Repeated failed login attempts from a single IP
 - Pattern consistent with brute force attack
 - No successful authentication observed
 
-SOC Actions:
+**SOC Actions:**
 - Identified source IP
 - Confirmed attack pattern
 - Recommendedations include blocking IP or enforcing account lockout policies
