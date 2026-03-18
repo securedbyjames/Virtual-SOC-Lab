@@ -1,7 +1,7 @@
 <h1>Project 3: Brute Force Attack & Detection</h1>
 
 <h2>Overview</h2>
-This project simulates a real-world brute force attack against a Windows 11 machine and demonstrates how to detect and analyze the activity using Microsoft Sentinel and Defender.
+Real-world brute force attack against a Windows 11 machine that demonstrates how to detect and analyze the activity using Microsoft Sentinel and Defender.
 
 <h3>Lab Architecture</h3>
 
