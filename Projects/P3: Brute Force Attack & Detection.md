@@ -6,8 +6,8 @@ Real-world brute force attack against a Windows 11 machine that demonstrates how
 <h3>Lab Architecture</h3>
 
   - Host Machine: macOS (VMware Fusion)
-  - Attacker: Kali Linux VM
-  - Target: Windows 11 VM
+  - Attacker: Kali Linux VM (IP: 192.168.180.128)
+  - Target: Windows 11 VM (IP: 192.168.180.133)
   - SIEM: Azure Sentinel
   - EDR: Microsoft Defender for Endpoint
   - Log Source: Windows Security Events (Event ID 4625)
@@ -30,11 +30,12 @@ Before performing any attack simulations, I enabled auditing on the Windows 11 t
 - Audit Logon Events → Failure
 - Audit Logon Events → Success
 
-<h2>Step 2: Reconissance using Nmap</h2>
+<h2>Step 2: Reconaissance using Nmap</h2>
 
 I used Nmap to identify open ports on the Windows 11 target.
 
-<IMAGE>
+<p align="left">
+<img src="https://i.imgur.com/C12YcqB.png" width="75%" height="75%">
 
 Key Findings:
 - Port 3389 (RDP) open
@@ -47,7 +48,8 @@ This confirms that RDP is exposed and can be targeted for brute force attacks.
 
 I used Hydra to perform a password brute force attack against the RDP service.
 
-<Image>
+<p align="left">
+<img src="https://i.imgur.com/eq782Ml.png" width="75%" height="75%">
 
 **Behavior Observed:**
 - Multiple failed login attempts
@@ -60,12 +62,16 @@ This activity generates Windows Security Event ID 4625 (failed logons).
 
 The attack logs were ingested into Microsoft Sentinel.
 
-<IMAGE>
+<p align="left">
+<img src="https://i.imgur.com/vq8TMtm.png" width="75%" height="75%">
+
+<p align="left">
+<img src="https://i.imgur.com/6BLwRlm.png" width="75%" height="75%">
 
 Key Insights:
 - Source IP: 192.168.180.128 (Kali attacker)
 - Target Account: james
-- Failed attempts detected in 5-minute intervals
+- Failed attempts detected in 5-minute intervals (from scheduled KQL alert rule)
 
 <h2>Step 5: Alert Creation</h2>
 
@@ -85,7 +91,8 @@ Alert Details:
 
 Multiple alerts were generated for failed logon attempts (brute force)
 
-<IMAGE>
+<p align="left">
+<img src="https://i.imgur.com/Fz6avl4.png" width="75%" height="75%">
 
 Findings:
 - Repeated failed login attempts from a single IP
